@@ -28,7 +28,7 @@ class AppConfigRestControllerTest  extends AbstractIT {
                 .then()
                 .body("data", is(notNullValue()))
                 .body("data.siteLogo", is("url"))
-                .body("data.siteTagLine", is("Helps To Manage Task"))
+                .body("data.siteTagLine", is("Helps To Manage Tasks"))
                 .body("success", is(true))
                 .body("code", is(200))
                 .body("message", is("Fetched Successfully"));
