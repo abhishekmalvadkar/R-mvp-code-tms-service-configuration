@@ -8,7 +8,6 @@ import org.springframework.test.context.jdbc.Sql;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
-import static org.hamcrest.Matchers.nullValue;
 
 
 @Sql("/app-config-test-data.sql")
@@ -29,7 +28,7 @@ class AppConfigRestControllerTest  extends AbstractIT {
                 .then()
                 .body("data", is(notNullValue()))
                 .body("data.siteLogo", is("url"))
-                .body("data.siteTagLine", is("Helps To Manage Tasks"))
+                .body("data.siteTagLine", is("Helps To Manage Task"))
                 .body("success", is(true))
                 .body("code", is(200))
                 .body("message", is("Fetched Successfully"));
