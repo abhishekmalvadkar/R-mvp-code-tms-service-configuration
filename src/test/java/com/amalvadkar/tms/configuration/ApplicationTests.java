@@ -1,13 +1,12 @@
 package com.amalvadkar.tms.configuration;
 
+import com.amalvadkar.tms.configuration.common.AbstractIT;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class ApplicationTests {
+class ApplicationTests extends AbstractIT {
 
 	@Test
-	void contextLoads() {
+	void should_load_context() {
 	}
 
 }
