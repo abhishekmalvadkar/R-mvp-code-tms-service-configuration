@@ -1,3 +1,9 @@
 logging:
   level:
     'com.amalvadkar.tms.configuration' : debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
